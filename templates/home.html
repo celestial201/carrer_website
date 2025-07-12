@@ -1,346 +1,137 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Career Website</title>
+    <title>My Website</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        /* Add your custom CSS styles here */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
             line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
         }
 
         header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 2rem 0;
+            background-color: #f4f4f4;
+            padding: 20px;
             text-align: center;
         }
 
         nav {
-            background: #333;
-            padding: 1rem 0;
+            background-color: #333;
+            padding: 10px;
         }
 
         nav ul {
             list-style: none;
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
         }
 
         nav li {
-            margin: 0 20px;
+            margin: 0 15px;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
         }
 
-        nav a:hover {
-            color: #667eea;
+        main {
+            padding: 20px 0;
         }
 
-        .hero {
-            background: white;
-            padding: 4rem 0;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            color: #333;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            color: #666;
-        }
-
-        .btn {
-            display: inline-block;
-            background: #667eea;
-            color: white;
-            padding: 12px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-
-        .btn:hover {
-            background: #5a67d8;
-        }
-
-        .section {
-            padding: 4rem 0;
-        }
-
-        .section:nth-child(even) {
-            background: white;
-        }
-
-        .section h2 {
-            text-align: center;
-            margin-bottom: 2rem;
-            font-size: 2.5rem;
-            color: #333;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .card {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: transform 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card h3 {
-            color: #667eea;
-            margin-bottom: 1rem;
-        }
-
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-
-        .skill {
-            background: #667eea;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            font-size: 0.9rem;
-        }
-
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: bold;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 0.8rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-
-        .form-group textarea {
-            height: 120px;
-            resize: vertical;
+        section {
+            margin-bottom: 30px;
         }
 
         footer {
-            background: #333;
+            background-color: #333;
             color: white;
             text-align: center;
-            padding: 2rem 0;
-        }
-
-        .social-links {
-            margin-top: 1rem;
-        }
-
-        .social-links a {
-            color: white;
-            font-size: 1.5rem;
-            margin: 0 10px;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .social-links a:hover {
-            color: #667eea;
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            nav ul {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            nav li {
-                margin: 10px 0;
-            }
+            padding: 20px;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Your Name</h1>
-            <p>Professional Title | Career Expert</p>
-        </div>
-    </header>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Your Website Title</h1>
+            <p>Your subtitle or tagline here</p>
+        </header>
 
-    <nav>
-        <div class="container">
+        <!-- Navigation Menu -->
+        <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <h1>Welcome to My Career Website</h1>
-            <p>Helping professionals advance their careers and achieve their goals</p>
-            <a href="#contact" class="btn">Get Started</a>
-        </div>
-    </section>
+        <!-- Main Content -->
+        <main>
+            <!-- Home Section -->
+            <section id="home">
+                <h2>Welcome</h2>
+                <p>Add your welcome message and main content here.</p>
+            </section>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="cards">
-                <div class="card">
-                    <h3>Experience</h3>
-                    <p>Over 10 years of experience in career development and professional coaching.</p>
-                </div>
-                <div class="card">
-                    <h3>Expertise</h3>
-                    <p>Specializing in resume writing, interview preparation, and career strategy.</p>
-                </div>
-                <div class="card">
-                    <h3>Success</h3>
-                    <p>Helped 500+ professionals land their dream jobs and advance their careers.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            <!-- About Section -->
+            <section id="about">
+                <h2>About</h2>
+                <p>Add information about yourself or your business here.</p>
+            </section>
 
-    <section id="services" class="section">
-        <div class="container">
-            <h2>My Services</h2>
-            <div class="cards">
-                <div class="card">
-                    <h3>Resume Writing</h3>
-                    <p>Professional resume writing services tailored to your industry and career goals.</p>
-                </div>
-                <div class="card">
-                    <h3>Interview Coaching</h3>
-                    <p>One-on-one coaching sessions to prepare you for successful job interviews.</p>
-                </div>
-                <div class="card">
-                    <h3>Career Strategy</h3>
-                    <p>Comprehensive career planning and strategy development for long-term success.</p>
-                </div>
-                <div class="card">
-                    <h3>LinkedIn Optimization</h3>
-                    <p>Optimize your LinkedIn profile to attract recruiters and networking opportunities.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            <!-- Services Section -->
+            <section id="services">
+                <h2>Services</h2>
+                <p>List your services or offerings here.</p>
+                <ul>
+                    <li>Service 1</li>
+                    <li>Service 2</li>
+                    <li>Service 3</li>
+                </ul>
+            </section>
 
-    <section id="portfolio" class="section">
-        <div class="container">
-            <h2>Skills & Expertise</h2>
-            <div class="skills">
-                <span class="skill">Career Counseling</span>
-                <span class="skill">Resume Writing</span>
-                <span class="skill">Interview Preparation</span>
-                <span class="skill">Job Search Strategy</span>
-                <span class="skill">LinkedIn Optimization</span>
-                <span class="skill">Professional Development</span>
-                <span class="skill">Networking</span>
-                <span class="skill">Career Transitions</span>
-            </div>
-        </div>
-    </section>
+            <!-- Contact Section -->
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Add your contact information here.</p>
+                <form>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="service">Service Interested In</label>
-                    <input type="text" id="service" name="service" placeholder="e.g., Resume Writing, Interview Coaching">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Tell me about your career goals and how I can help you." required></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
+        <!-- Footer -->
+        <footer>
             <p>&copy; 2024 Your Name. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#" title="LinkedIn">💼</a>
-                <a href="#" title="Email">📧</a>
-                <a href="#" title="Phone">📞</a>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
