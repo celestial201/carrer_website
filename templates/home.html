@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <img src = " ">
     <title>My Website</title>
     <style>
         /* Add your custom CSS styles here */
@@ -68,6 +67,7 @@
     <div class="container">
         <!-- Header Section -->
         <header>
+            <img src="{{ url_for('static', filename='banner.jpg') }}" alt="Website Banner" style="width: 100%; max-width: 800px; height: auto; margin-bottom: 20px;">
             <h1>Your Website Title</h1>
             <p>Your subtitle or tagline here</p>
         </header>
